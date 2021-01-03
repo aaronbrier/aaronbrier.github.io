@@ -1,0 +1,75 @@
+body {
+	font-family: "Lato";
+	background-color: #EFEDE7;
+	margin:0;
+	padding:0;
+}
+
+/* HEADER */
+
+header {
+	margin-top: 100px;
+	/* background-color: burlywood; */
+	text-align: right;
+}
+
+.links {
+	/* background-color: rgb(31, 31, 31); */
+	/* display: inline; */
+	margin-right: 40px;
+	font-size: 25px;
+}
+
+.links a {
+	text-decoration: none;
+}
+
+.links a:hover {
+	text-decoration: underline;
+}
+
+.links ul {
+	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+}
+
+.links li {
+	display: inline;
+	margin: 10px;
+}
+
+
+/* INTRO */
+h2 {
+	font-size:40px;
+	margin-bottom: 0;
+	position: relative;
+	text-align: center;
+}
+
+.introduction p {
+	width: 50%;
+	/* background-color: cadetblue; */
+	display: inline-block;
+	font-size: 30px;
+	margin-left: 10px;
+	/* position: relative; */
+	/* top: -60px; */
+	margin: auto;
+}
+
+.introduction img {
+	/* border: 1px solid white; */
+	border-radius: 50%;
+	box-shadow: rgba(121, 121, 121, 0.2) 0 0 16px;
+	display: inline-block;
+ 	margin-left: auto;
+  	margin-right: auto;
+}
+
+/* PROJECTS */
+.projects {
+	background-color: rgb(255, 255, 255);
+	height: 1000px;
+}
