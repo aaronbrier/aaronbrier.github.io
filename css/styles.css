@@ -44,6 +44,7 @@ header {
 	padding-top: 60px;
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .container .home {
@@ -153,6 +154,7 @@ footer a:hover {
 
 .pictures {
 	max-width: 1400px;
+	padding: 0 40px;
 	margin: 0 auto;
 	margin-top: 50px;
 	display: grid;
