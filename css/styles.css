@@ -17,10 +17,11 @@ ul {
 	list-style-type: none;
 }
 
-h1, h2 {
+h2 {
 	font-weight: 700;
 	line-height: 1.2;
-	margin: 20px 0;
+	margin-top: 40px;
+	margin-bottom: 20px;
 	font-size: 35px;
 }
 
@@ -28,40 +29,50 @@ p {
 	margin: 10px 0;
 }
 
-
 img {
 	width: 100%;
 }
 
-.links {
+header {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 40px 0 40px;
+}
+
+.container {
 	font-size: 28px;
-	padding-top: 60px;	
+	padding-top: 60px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.container .home {
+	font-size: 33px;
+	position: relative;
+	top: -6px;
+	margin-right: 10px;
 }
 
 .links ul {
-
 	display: flex;
-	justify-content:flex-end;
 }
 
-.links a {
-	padding: 15px;
+.container .links a {
+	padding: 10px;
+}
+
+.container a {
 	text-decoration: none;
 	color: #333;
+	border-bottom: 2px solid transparent;
 }
 
-.links a:hover {
-	border-bottom: 2px #333 solid;
-}
-
-header {
-	max-width: 1100px;
-	margin: 0 auto;
-	padding: 0 40px;
+.container a:hover {
+	border-bottom: 2px solid #333;
 }
 
 .introduction {
-	max-width: 1100px;
+	max-width: 1000px;
 	margin: 0 auto;
 	padding: 0 40px;
 }
@@ -75,7 +86,7 @@ header {
 }
 
 .resume {
-	max-width: 1100px;
+	max-width: 1000px;
 	margin: 0 auto;
 	margin-top: 50px;
 	padding: 0 40px;
@@ -89,4 +100,25 @@ header {
 .resume a {
 	font-size: 20px;
 	text-decoration: none;
+}
+
+footer {
+	max-width: 200px;
+	margin: 0 auto;
+	margin-top: 125px;
+	padding: 0 40px;
+	text-align: center;
+}
+
+footer a {
+	text-decoration: none;
+	color: #333;
+}
+
+footer a:hover {
+	border-bottom: 2px solid #666;
+}
+
+img {
+	width: 1000px;
 }
