@@ -71,25 +71,37 @@ header {
 	border-bottom: 2px solid #333;
 }
 
+.hello {
+	max-width: 1000px;
+	margin: 50px auto 0 auto;
+	padding: 0 40px;
+}
+
 .intro-container {
 	max-width: 1000px;
 	margin: 0 auto;
 	padding: 0 40px;
 	display: flex;
-	/* flex-direction: row; */
+	flex-wrap: wrap;
+	/* display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-auto-rows: auto; */
 }
 
+
 .profile {
-  max-width:300px;
-  max-height:300px;
+  	max-width:300px;
+  	max-height:300px;
 	border-radius: 50%;
 	box-shadow: gray 0 0 10px;
-	top: 55px;
+	top: -10px;
 	position: relative;
 }
 
 .introduction {
+	flex: 1;
 	min-width: 300px;
+	/* max-width: 600px; */
 	padding-right: 30px;
 }
 
@@ -104,8 +116,12 @@ header {
 .resume {
 	max-width: 1000px;
 	margin: 0 auto;
-	margin-top: 50px;
+	margin-top: 0px;
 	padding: 0 40px;
+}
+
+.edu {
+	margin-top: 0;
 }
 
 .resume p {
@@ -121,7 +137,7 @@ header {
 footer {
 	max-width: 200px;
 	margin: 0 auto;
-	margin-top: 90px;
+	margin-top: 60px;
 	padding: 0 40px;
 	text-align: center;
 }
@@ -137,10 +153,21 @@ footer a:hover {
 
 .pictures {
 	max-width: 1400px;
+	margin: 0 auto;
+	margin-top: 50px;
 	display: grid;
 	grid-gap: 5px;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	grid-auto-rows: 300px;
-	margin: 0 auto;
-	margin-top: 50px;
+	grid-auto-rows: auto;
+	grid-auto-flow: dense;
+	
+}
+
+.pictures > div > img {
+	/* object-fit: contain; */
+	box-shadow: gray 0 0 10px;
+}
+
+.long {
+	grid-row: span 2;
 }
