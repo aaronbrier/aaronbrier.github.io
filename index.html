@@ -3,55 +3,238 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Aaron Brier</title>
+	<title>Aaron Brier - Software Engineer</title>
 	<link rel="stylesheet" href="css/styles.css">
-	<link rel="icon" type="img/png" href="favicon/ab.png">
+	<link rel="icon" type="image/png" href="favicon/ab.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-9DXF2KD116"></script>
 	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-
-	gtag('config', 'G-9DXF2KD116');
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-9DXF2KD116');
 	</script>
 </head>
 <body>
-	<header>
-		<div class="container">
-			<a class="home" href="index.html">Home</a>
-			<div class="links">
+	<nav class="navbar">
+		<div class="nav-container">
+			<a class="nav-home" href="index.html">Aaron Brier</a>
+			<div class="nav-links">
 				<ul>
-					<li><a href="https://github.com/aaronbrier", target="_blank">Github</a></li>
-					<li><a href="https://www.linkedin.com/in/aaronbrier/", target="_blank">LinkedIn</a></li>
-					<li><a href="aaron_brier_resume.pdf" target="_blank">Resume</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#experience">Experience</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="https://github.com/aaronbrier" target="_blank">GitHub</a></li>
+					<li><a href="https://www.linkedin.com/in/aaronbrier/" target="_blank">LinkedIn</a></li>
 				</ul>
 			</div>
+			<div class="mobile-menu-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
 		</div>
-	</header>
-	<h2 class="hello">Hello!</h2>
-	<div class="intro-container">
-		<section class="introduction">
-			<p>I'm Aaron, a third year undergraduate studying computer science at the University of California, Irvine.
-				I am currently an incoming Software Development Engineer intern at Amazon. You can contact me
-				at <a href="mailto:briera@uci.edu">briera@uci.edu</a> or through LinkedIn.
-			</p>
+	</nav>
+
+	<main>
+		<section class="hero">
+			<div class="hero-content">
+				<div class="hero-text">
+					<h1 class="hero-title">Hi, I'm Aaron Brier</h1>
+					<h2 class="hero-subtitle">Software Development Engineer II @ Amazon</h2>
+					<p class="hero-description">
+						Experienced software engineer specializing in AWS services, distributed systems, and operational excellence. 
+						Passionate about solving complex technical challenges and mentoring the next generation of developers.
+					</p>
+					<div class="hero-buttons">
+						<a href="mailto:aaronjbrier@gmail.com" class="btn btn-primary">Get In Touch</a>
+						<a href="#experience" class="btn btn-secondary">View Experience</a>
+					</div>
+				</div>
+				<div class="hero-image">
+					<img class="profile" src="pictures/profile.jpg" alt="Aaron Brier - Profile Picture">
+				</div>
+			</div>
 		</section>
-		<img class="profile" src="pictures/profile.jpg" alt="profile picture">
-	</div>
-	
-	<section class="resume">
-		<h2 class="edu">Education</h2>
-		<a href="https://uci.edu/" target="_blank">UC Irvine</a>
-		<p>Sept. 2018 - June 2022</p>
-		<p>B.S. in Computer Science</p>
-		<p>GPA: 3.97 of 4.0</p>
-		<h2>Relevant Experience</h2>
-		<a href="http://tutors.ics.uci.edu/" target="_blank">Donald Brenn School of ICS Lab Tutor</a>
-		<p>Jan. 2020 - Mar. 2020</p>
-	</section>
-	<footer><a href="pictures.html">Click Me!</a></footer>
-	
+
+		<section id="about" class="section">
+			<div class="container">
+				<h2 class="section-title">About Me</h2>
+				<div class="about-content">
+					<p>
+						I'm a Software Development Engineer II at Amazon with <span id="years-experience">over 3 years</span> of experience building scalable,
+						distributed systems. I specialize in developing critical AWS services that operate at massive scale, 
+						focusing on reliability, performance, and operational excellence.
+					</p>
+					<p>
+						My expertise spans the full software development lifecycle - from customer research and system design 
+						to implementation, testing, deployment, and operations. I'm particularly passionate about operational 
+						excellence, having significantly improved service reliability and reduced operational overhead through 
+						innovative solutions.
+					</p>
+					<div class="skills">
+						<h3>Technical Skills</h3>
+						<div class="skill-tags">
+							<span class="skill-tag">AWS</span>
+							<span class="skill-tag">Java</span>
+							<span class="skill-tag">Python</span>
+							<span class="skill-tag">JavaScript</span>
+							<span class="skill-tag">DynamoDB</span>
+							<span class="skill-tag">Lambda</span>
+							<span class="skill-tag">CloudFormation</span>
+							<span class="skill-tag">CDK</span>
+							<span class="skill-tag">Distributed Systems</span>
+							<span class="skill-tag">System Design</span>
+							<span class="skill-tag">Mentoring</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="experience" class="section section-alt">
+			<div class="container">
+				<h2 class="section-title">Professional Experience</h2>
+				<div class="timeline">
+					<div class="timeline-item">
+						<div class="timeline-marker"></div>
+						<div class="timeline-content">
+							<h3>Software Development Engineer II</h3>
+							<h4>Amazon Web Services</h4>
+							<p class="timeline-date">April 2025 - Present</p>
+							<p>Currently working on IDR (Incident Detection and Response), focusing on automated incident detection, investigation, and response capabilities for AWS customers.</p>
+						</div>
+					</div>
+					
+					<div class="timeline-item">
+						<div class="timeline-marker"></div>
+						<div class="timeline-content">
+							<h3>Software Development Engineer I</h3>
+							<h4>Amazon Web Services</h4>
+							<p class="timeline-date">August 2022 - April 2025</p>
+							<ul>
+								<li><strong>Service Regionalization:</strong> Led the complete regionalization of a critical service, designing and implementing global table replication across all commercial regions and resolving complex architectural challenges</li>
+								<li><strong>Customer Account Migration:</strong> Pioneered the migration of team services away from customer accounts to centralized systems, eliminating 550+ operational issues and significantly improving security posture</li>
+								<li><strong>Security Incident Response:</strong> Delivered Security Incident Response capabilities while on away-team assignment, coordinating across multiple teams under strict deadlines</li>
+								<li><strong>Operational Excellence:</strong> Created comprehensive operational dashboards adopted team-wide, authored critical COEs, and consistently assisted in debugging high-severity issues</li>
+								<li><strong>Mentorship:</strong> Successfully mentored intern through complex AWS project, resulting in 99.5% reduction in Lambda invocations and 75% cost reduction</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="timeline-item">
+						<div class="timeline-marker"></div>
+						<div class="timeline-content">
+							<h3>Software Development Engineer Intern</h3>
+							<h4>Amazon Web Services</h4>
+							<p class="timeline-date">Summer 2022</p>
+							<ul>
+								<li><strong>Internal Service Development:</strong> Designed and developed an internal service that generates operational work items for non-compliant AWS resources in customer accounts</li>
+								<li><strong>Proactive Issue Management:</strong> Facilitated proactive issue identification and remediation for hundreds of customer accounts within AWS Managed Services</li>
+								<li><strong>Operational Efficiency:</strong> Enabled ops engineers to efficiently address non-compliance by providing insights and access to manual or automated remediation options</li>
+								<li><strong>Impact:</strong> Project success led to full-time offer and subsequent team placement</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="timeline-item">
+						<div class="timeline-marker"></div>
+						<div class="timeline-content">
+							<h3>Lab Tutor</h3>
+							<h4>UC Irvine - Donald Bren School of ICS</h4>
+							<p class="timeline-date">January 2020 - March 2020</p>
+							<p>Provided academic support to undergraduate students in computer science coursework.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="projects" class="section">
+			<div class="container">
+				<h2 class="section-title">Key Projects & Achievements</h2>
+				<div class="projects-grid">
+					<div class="project-card">
+						<h3>Service Regionalization</h3>
+						<p>Architected and implemented complete regionalization of a critical service, solving complex distributed systems challenges and enabling global service availability.</p>
+						<div class="project-tags">
+							<span class="project-tag">AWS</span>
+							<span class="project-tag">DynamoDB</span>
+							<span class="project-tag">Global Tables</span>
+							<span class="project-tag">System Design</span>
+						</div>
+					</div>
+
+					<div class="project-card">
+						<h3>Customer Account Migration</h3>
+						<p>Led innovative solution to eliminate team's footprint in customer accounts, reducing operational overhead and improving security across all AWS Managed Services.</p>
+						<div class="project-tags">
+							<span class="project-tag">AWS Services</span>
+							<span class="project-tag">Security</span>
+							<span class="project-tag">CloudFormation</span>
+							<span class="project-tag">Migration</span>
+						</div>
+					</div>
+
+					<div class="project-card">
+						<h3>Operational Dashboards</h3>
+						<p>Created comprehensive monitoring and alerting dashboards adopted across the team, significantly improving operational visibility and incident response.</p>
+						<div class="project-tags">
+							<span class="project-tag">CloudWatch</span>
+							<span class="project-tag">CDK</span>
+							<span class="project-tag">Monitoring</span>
+							<span class="project-tag">DevOps</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-alt">
+			<div class="container">
+				<h2 class="section-title">Education</h2>
+				<div class="education-content">
+					<div class="education-item">
+						<h3>Bachelor of Science in Computer Science</h3>
+						<h4><a href="https://uci.edu/" target="_blank">University of California, Irvine</a></h4>
+						<p class="education-date">September 2018 - June 2022</p>
+						<p class="education-gpa">GPA: 3.97/4.0</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact-section">
+			<div class="container">
+				<h2 class="section-title">Let's Connect</h2>
+				<p class="contact-description">
+					I'm always interested in discussing technology, career opportunities, or potential collaborations.
+				</p>
+				<div class="contact-links">
+					<a href="mailto:aaronjbrier@gmail.com" class="contact-link">
+						<span>Email</span>
+					</a>
+					<a href="https://www.linkedin.com/in/aaronbrier/" target="_blank" class="contact-link">
+						<span>LinkedIn</span>
+					</a>
+					<a href="https://github.com/aaronbrier" target="_blank" class="contact-link">
+						<span>GitHub</span>
+					</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="container">
+			<p>&copy; 2025 Aaron Brier. All rights reserved.</p>
+		</div>
+	</footer>
+
+	<script src="js/main.js"></script>
 </body>
 </html>
